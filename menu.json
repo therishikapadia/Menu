@@ -1,0 +1,357 @@
+{
+  "restaurant": {
+    "name": "Mexican Pizza Parlour",
+    "currency": "₹"
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "title": {
+        "en": "Pizza",
+        "gu": "પિઝ્ઝા"
+      },
+      "items": [
+        {
+          "id": "mix-veg-pizza",
+          "name": {
+            "en": "Mix Veg Pizza",
+            "gu": "મિક્સ વેજ પિઝ્ઝા"
+          },
+          "price": 120
+        },
+        {
+          "id": "margreta-cheese-pizza",
+          "name": {
+            "en": "Margreta Cheese Pizza",
+            "gu": "માર્ગરિટા ચીઝ પિઝ્ઝા"
+          },
+          "price": 120
+        },
+        {
+          "id": "tandoori-paneer-pizza",
+          "name": {
+            "en": "Tandoori Paneer Pizza",
+            "gu": "તંદૂરી પનીર પિઝ્ઝા"
+          },
+          "price": 180
+        },
+        {
+          "id": "cheese-burst-pizza",
+          "name": {
+            "en": "Cheese Burst Pizza",
+            "gu": "ચીઝ બર્સ્ટ પિઝ્ઝા"
+          },
+          "price": 200
+        },
+        {
+          "id": "italian-cheese-pizza",
+          "name": {
+            "en": "Italian Cheese Pizza",
+            "gu": "ઇટાલિયન ચીઝ પિઝ્ઝા"
+          },
+          "price": 150
+        },
+        {
+          "id": "onion-capsicum-pizza",
+          "name": {
+            "en": "Onion Capsicum Pizza",
+            "gu": "ઓનિયન કેપ્સીકમ પિઝ્ઝા"
+          },
+          "price": 150
+        },
+        {
+          "id": "cheese-corn-pizza",
+          "name": {
+            "en": "Cheese Corn Pizza",
+            "gu": "ચીઝ કોર્ન પિઝ્ઝા"
+          },
+          "price": 150
+        },
+        {
+          "id": "chocolate-pizza",
+          "name": {
+            "en": "Chocolate Pizza",
+            "gu": "ચોકલેટ પિઝ્ઝા"
+          },
+          "price": 190
+        },
+        {
+          "id": "extra-cheese",
+          "name": {
+            "en": "Extra Cheese",
+            "gu": "એક્સ્ટ્રા ચીઝ"
+          },
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "garlic-bread",
+      "title": {
+        "en": "Garlic Bread",
+        "gu": "ગાર્લિક બ્રેડ"
+      },
+      "items": [
+        {
+          "id": "cheese-garlic-bread",
+          "name": {
+            "en": "Cheese Garlic Bread",
+            "gu": "ચીઝ ગાર્લિક બ્રેડ"
+          },
+          "price": 80
+        },
+        {
+          "id": "corn-cheese-garlic-bread",
+          "name": {
+            "en": "Corn Cheese Garlic Bread",
+            "gu": "કોર્ન ચીઝ ગાર્લિક બ્રેડ"
+          },
+          "price": 80
+        },
+        {
+          "id": "paneer-cheese-garlic-bread",
+          "name": {
+            "en": "Paneer Cheese Garlic Bread",
+            "gu": "પનીર ચીઝ ગાર્લિક બ્રેડ"
+          },
+          "price": 99
+        },
+        {
+          "id": "jain-cheese-bread",
+          "name": {
+            "en": "Jain Cheese Bread",
+            "gu": "જૈન ચીઝ બ્રેડ"
+          },
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "title": {
+        "en": "Burger",
+        "gu": "બર્ગર"
+      },
+      "items": [
+        {
+          "id": "veg-burger",
+          "name": {
+            "en": "Veg Burger",
+            "gu": "વેજ બર્ગર"
+          },
+          "price": 50
+        },
+        {
+          "id": "veg-cheese-burger",
+          "name": {
+            "en": "Veg Cheese Burger",
+            "gu": "વેજ ચીઝ બર્ગર"
+          },
+          "price": 60
+        },
+        {
+          "id": "peri-peri-burger",
+          "name": {
+            "en": "Peri Peri Burger",
+            "gu": "પેરી પેરી બર્ગર"
+          },
+          "price": 60
+        },
+        {
+          "id": "peri-peri-cheese-burger",
+          "name": {
+            "en": "Peri Peri Cheese Burger",
+            "gu": "પેરી પેરી ચીઝ બર્ગર"
+          },
+          "price": 70
+        },
+        {
+          "id": "schezwan-burger",
+          "name": {
+            "en": "Schezwan Burger",
+            "gu": "સેઝવાન બર્ગર"
+          },
+          "price": 60
+        },
+        {
+          "id": "schezwan-cheese-burger",
+          "name": {
+            "en": "Schezwan Cheese Burger",
+            "gu": "સેઝવાન ચીઝ બર્ગર"
+          },
+          "price": 70
+        },
+        {
+          "id": "tandoori-paneer-burger",
+          "name": {
+            "en": "Tandoori Paneer Burger",
+            "gu": "તંદૂરી પનીર બર્ગર"
+          },
+          "price": 80
+        },
+        {
+          "id": "mexican-special-burger",
+          "name": {
+            "en": "Mexican Special Burger",
+            "gu": "મેક્સિકન સ્પેશિયલ બર્ગર"
+          },
+          "price": 110
+        }
+      ]
+    },
+    {
+      "id": "hotdog",
+      "title": {
+        "en": "Hot Dog",
+        "gu": "હોટ ડોગ"
+      },
+      "items": [
+        {
+          "id": "veg-hotdog",
+          "name": {
+            "en": "Veg Hot Dog",
+            "gu": "વેજ હોટ ડોગ"
+          },
+          "price": 60
+        },
+        {
+          "id": "veg-cheese-hotdog",
+          "name": {
+            "en": "Veg Cheese Hot Dog",
+            "gu": "વેજ ચીઝ હોટ ડોગ"
+          },
+          "price": 80
+        },
+        {
+          "id": "paneer-cheese-hotdog",
+          "name": {
+            "en": "Paneer Cheese Hot Dog",
+            "gu": "પનીર ચીઝ હોટ ડોગ"
+          },
+          "price": 100
+        },
+        {
+          "id": "extra-cheese-hotdog",
+          "name": {
+            "en": "Extra Cheese",
+            "gu": "એક્સ્ટ્રા ચીઝ"
+          },
+          "price": 20
+        },
+        {
+          "id": "extra-tikki",
+          "name": {
+            "en": "Extra Tikki",
+            "gu": "એક્સ્ટ્રા ટિક્કી"
+          },
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": "sandwich",
+      "title": {
+        "en": "Sandwich",
+        "gu": "સેન્ડવીચ"
+      },
+      "subcategories": [
+        {
+          "id": "grilled",
+          "title": {
+            "en": "Grilled",
+            "gu": "ગ્રિલ્ડ"
+          },
+          "items": [
+            {
+              "id": "aloo-matar",
+              "name": {
+                "en": "Aloo Matar",
+                "gu": "આલુ મટર"
+              },
+              "variants": [
+                {
+                  "name": "2 Layer",
+                  "price": 50
+                },
+                {
+                  "name": "3 Layer",
+                  "price": 70
+                }
+              ]
+            },
+            {
+              "id": "vegetable-grill",
+              "name": {
+                "en": "Vegetable Grill",
+                "gu": "વેજીટેબલ ગ્રિલ"
+              },
+              "variants": [
+                {
+                  "name": "2 Layer",
+                  "price": 50
+                },
+                {
+                  "name": "3 Layer",
+                  "price": 70
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fries",
+      "title": {
+        "en": "French Fries",
+        "gu": "ફ્રેન્ચ ફ્રાઈસ"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Masala Fries",
+            "gu": "મસાલા ફ્રાઈસ"
+          },
+          "price": 70
+        },
+        {
+          "name": {
+            "en": "Peri Peri Fries",
+            "gu": "પેરી પેરી ફ્રાઈસ"
+          },
+          "price": 80
+        },
+        {
+          "name": {
+            "en": "Cheese Fries",
+            "gu": "ચીઝ ફ્રાઈસ"
+          },
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": "cold-coffee",
+      "title": {
+        "en": "Cold Coffee",
+        "gu": "કોલ્ડ કોફી"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Cold Coffee",
+            "gu": "કોલ્ડ કોફી"
+          },
+          "price": 40
+        },
+        {
+          "name": {
+            "en": "Cold Coffee with Ice Cream",
+            "gu": "આઈસ્ક્રીમ સાથે કોલ્ડ કોફી"
+          },
+          "price": 60
+        }
+      ]
+    }
+  ]
+}

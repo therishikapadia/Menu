@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="header-content">
+        <h1 id="restaurant-name">Restaurant Menu</h1>
+        <div class="lang-toggle">
+          <span id="lang-en" class="lang-option active">English</span>
+          <label class="switch">
+            <input type="checkbox" id="lang-switch">
+            <span class="slider round"></span>
+          </label>
+          <span id="lang-gu" class="lang-option">ગુજરાતી</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="menu-section">
+      <div class="filters-wrapper">
+        <div class="filters" id="filters-container">
+          <!-- Filters will be generated dynamically -->
+        </div>
+      </div>
+      
+      <div class="menu-grid" id="menu-grid">
+        <!-- Menu items will be generated dynamically -->
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> <span id="footer-restaurant-name"></span></p>
+    </footer>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
