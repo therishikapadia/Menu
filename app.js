@@ -18,7 +18,13 @@ yearEl.textContent = new Date().getFullYear();
 // Initialize App
 async function initApp() {
   try {
-    const response = await fetch('menu.json');
+    let response;
+    try {
+      response = await fetch('m.json');
+      if (!response.ok) throw new Error('m.json not found');
+    } catch (e) {
+      response = await fetch('menu.json');
+    }
     menuData = await response.json();
     
     // Set basic info
@@ -91,10 +97,22 @@ function renderMenu() {
     : menuData.categories.filter(c => c.id === currentFilter);
     
   categoriesToRender.forEach(cat => {
-    // Add Category Header
+    // Add Category Header & Notes
     const catHeaderWrap = document.createElement('div');
     catHeaderWrap.className = 'category-header-wrap';
-    catHeaderWrap.innerHTML = `<h3 class="category-header">${cat.title[currentLang] || cat.title.en}</h3>`;
+    
+    let notesHtml = '';
+    if (cat.notes) {
+      const notesList = cat.notes[currentLang] || cat.notes.en || [];
+      if (notesList.length > 0) {
+        notesHtml = `<div class="category-notes">${notesList.map(n => `<span class="note-badge">📌 ${n}</span>`).join('')}</div>`;
+      }
+    }
+    
+    catHeaderWrap.innerHTML = `
+      <h3 class="category-header">${cat.title[currentLang] || cat.title.en}</h3>
+      ${notesHtml}
+    `;
     menuGrid.appendChild(catHeaderWrap);
     
     // Check if category has direct items
@@ -102,7 +120,7 @@ function renderMenu() {
       renderItems(cat.items, currency);
     }
     
-    // Check if category has subcategories (like sandwiches)
+    // Check if category has subcategories
     if (cat.subcategories && cat.subcategories.length > 0) {
       cat.subcategories.forEach(subcat => {
         if (subcat.items && subcat.items.length > 0) {
@@ -118,11 +136,11 @@ function renderItems(items, currency, subcatTitleObj = null) {
     const card = document.createElement('div');
     card.className = 'menu-card';
     
-    const nameStr = item.name[currentLang] || item.name.en;
+    const nameStr = item.name ? (item.name[currentLang] || item.name.en) : '';
     let subcatStr = '';
     if (subcatTitleObj) {
       const st = subcatTitleObj[currentLang] || subcatTitleObj.en;
-      subcatStr = `<div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 4px;">${st}</div>`;
+      subcatStr = `<div class="subcat-title">${st}</div>`;
     }
     
     let priceHtml = '';
@@ -130,12 +148,34 @@ function renderItems(items, currency, subcatTitleObj = null) {
     
     if (item.price) {
       priceHtml = `<span class="item-price">${currency}${item.price}</span>`;
+    } else if (item.options && item.options.length > 0) {
+      variantsHtml = `<div class="options-container">`;
+      item.options.forEach(opt => {
+        const typeStr = typeof opt.type === 'object' ? (opt.type[currentLang] || opt.type.en) : opt.type;
+        variantsHtml += `
+          <div class="option-group">
+            <div class="option-group-title">${typeStr}</div>
+            <div class="option-variants">
+        `;
+        opt.variants.forEach(v => {
+          const vName = typeof v.name === 'object' ? (v.name[currentLang] || v.name.en) : v.name;
+          variantsHtml += `
+            <div class="variant-item">
+              <span class="variant-name">${vName}</span>
+              <span class="variant-price">${currency}${v.price}</span>
+            </div>
+          `;
+        });
+        variantsHtml += `</div></div>`;
+      });
+      variantsHtml += `</div>`;
     } else if (item.variants && item.variants.length > 0) {
       variantsHtml = `<div class="variants-container">`;
       item.variants.forEach(v => {
+        const vName = typeof v.name === 'object' ? (v.name[currentLang] || v.name.en) : v.name;
         variantsHtml += `
           <div class="variant-item">
-            <span>${v.name}</span>
+            <span class="variant-name">${vName}</span>
             <span class="variant-price">${currency}${v.price}</span>
           </div>
         `;
