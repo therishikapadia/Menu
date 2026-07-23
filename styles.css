@@ -214,6 +214,9 @@ input:checked + .slider:before {
   grid-column: 1 / -1;
   margin-top: 15px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .category-header {
@@ -223,6 +226,29 @@ input:checked + .slider:before {
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 6px;
   display: inline-block;
+  align-self: flex-start;
+}
+
+.category-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.note-badge {
+  font-size: 0.8rem;
+  background-color: rgba(255, 94, 87, 0.08);
+  color: #d63031;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.subcat-title {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
 }
 
 /* Menu Grid */
@@ -271,6 +297,36 @@ input:checked + .slider:before {
   white-space: nowrap;
 }
 
+.options-container {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-group {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.option-group-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+
+.option-variants {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .variants-container {
   margin-top: auto;
   padding-top: 12px;
@@ -287,9 +343,13 @@ input:checked + .slider:before {
   color: var(--text-secondary);
 }
 
+.variant-name {
+  color: var(--text-primary);
+}
+
 .variant-price {
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--accent-color);
 }
 
 /* Footer */
