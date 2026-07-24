@@ -798,6 +798,7 @@
       },
       "items": [
         {
+          "id": "masala-fries",
           "name": {
             "en": "Masala Fries",
             "gu": "મસાલા ફ્રાઈસ"
@@ -805,6 +806,7 @@
           "price": 70
         },
         {
+          "id": "peri-peri-fries",
           "name": {
             "en": "Peri Peri Fries",
             "gu": "પેરી પેરી ફ્રાઈસ"
@@ -812,6 +814,7 @@
           "price": 80
         },
         {
+          "id": "cheese-fries",
           "name": {
             "en": "Cheese Fries",
             "gu": "ચીઝ ફ્રાઈસ"
@@ -828,6 +831,7 @@
       },
       "items": [
         {
+          "id": "cold-coffee-item",
           "name": {
             "en": "Cold Coffee",
             "gu": "કોલ્ડ કોફી"
@@ -835,11 +839,113 @@
           "price": 40
         },
         {
+          "id": "cold-coffee-with-ice-cream",
           "name": {
             "en": "Cold Coffee with Ice Cream",
             "gu": "આઈસ્ક્રીમ સાથે કોલ્ડ કોફી"
           },
           "price": 60
+        }
+      ]
+    },
+    {
+      "id": "dabeli",
+      "title": {
+        "en": "Dabeli",
+        "gu": "દાબેલી"
+      },
+      "items": [
+        {
+          "id": "butter-dabeli",
+          "name": {
+            "en": "Butter Dabeli",
+            "gu": "બટર દાબેલી"
+          },
+          "price": 25
+        },
+        {
+          "id": "cheese-dabeli",
+          "name": {
+            "en": "Cheese Dabeli",
+            "gu": "ચીઝ દાબેલી"
+          },
+          "price": 45
+        },
+        {
+          "id": "amul-butter-dabeli",
+          "name": {
+            "en": "Amul Butter Dabeli",
+            "gu": "અમૂલ બટર દાબેલી"
+          },
+          "price": 30
+        },
+        {
+          "id": "amul-cheese-dabeli",
+          "name": {
+            "en": "Amul Cheese Dabeli",
+            "gu": "અમૂલ ચીઝ દાબેલી"
+          },
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "vada-pav",
+      "title": {
+        "en": "Vada Pav",
+        "gu": "વડા પાઉં"
+      },
+      "items": [
+        {
+          "id": "vadapav",
+          "name": {
+            "en": "Vadapav",
+            "gu": "વડા પાઉં"
+          },
+          "price": 25
+        },
+        {
+          "id": "butter-vadapav",
+          "name": {
+            "en": "Butter Vadapav",
+            "gu": "બટર વડા પાઉં"
+          },
+          "price": 30
+        },
+        {
+          "id": "cheese-vadapav",
+          "name": {
+            "en": "Cheese Vadapav",
+            "gu": "ચીઝ વડા પાઉં"
+          },
+          "price": 45
+        }
+      ]
+    },
+    {
+      "id": "combo",
+      "title": {
+        "en": "Combo",
+        "gu": "કોમ્બો"
+      },
+      "items": [
+        {
+          "id": "pizza-sandwich-fries-combo",
+          "name": {
+            "en": "Pizza (150) + Sandwich (120) + French Fries (80)",
+            "gu": "પિઝ્ઝા (૧૫૦) + સેન્ડવીચ (૧૨૦) + ફ્રેન્ચ ફ્રાઈસ (૮૦)"
+          },
+          "originalPrice": 350,
+          "price": 320
+        },
+        {
+          "id": "burger-garlicbread-pizza-coffee-combo",
+          "name": {
+            "en": "Burger (70) + Garlic Bread (80) + Pizza (150) + Cold Coffee (60)",
+            "gu": "બર્ગર (૭૦) + ગાર્લિક બ્રેડ (૮૦) + પિઝ્ઝા (૧૫૦) + કોલ્ડ કોફી (૬૦)"
+          },
+          "originalPrice": 360,
+          "price": 330
         }
       ]
     }
