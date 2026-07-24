@@ -20,10 +20,10 @@ async function initApp() {
   try {
     let response;
     try {
-      response = await fetch('m.json');
-      if (!response.ok) throw new Error('m.json not found');
-    } catch (e) {
       response = await fetch('menu.json');
+      if (!response.ok) throw new Error('menu.json not found');
+    } catch (e) {
+      response = await fetch('m.json');
     }
     menuData = await response.json();
     
@@ -134,7 +134,8 @@ function renderMenu() {
 function renderItems(items, currency, subcatTitleObj = null) {
   items.forEach(item => {
     const card = document.createElement('div');
-    card.className = 'menu-card';
+    const isCombo = Boolean(item.originalPrice);
+    card.className = `menu-card ${isCombo ? 'combo-card' : ''}`;
     
     const nameStr = item.name ? (item.name[currentLang] || item.name.en) : '';
     let subcatStr = '';
@@ -143,11 +144,29 @@ function renderItems(items, currency, subcatTitleObj = null) {
       subcatStr = `<div class="subcat-title">${st}</div>`;
     }
     
+    let comboBadgeHtml = '';
+    if (isCombo) {
+      const tagText = currentLang === 'en' ? '🔥 Combo Offer' : '🔥 કોમ્બો ઓફર';
+      comboBadgeHtml = `<div class="combo-badge">${tagText}</div>`;
+    }
+    
     let priceHtml = '';
     let variantsHtml = '';
     
     if (item.price) {
-      priceHtml = `<span class="item-price">${currency}${item.price}</span>`;
+      if (item.originalPrice) {
+        const savings = item.originalPrice - item.price;
+        const saveText = currentLang === 'en' ? `Save ${currency}${savings}` : `${currency}${savings} બચત`;
+        priceHtml = `
+          <div class="price-container">
+            <span class="original-price">${currency}${item.originalPrice}</span>
+            <span class="item-price">${currency}${item.price}</span>
+            ${savings > 0 ? `<span class="save-badge">${saveText}</span>` : ''}
+          </div>
+        `;
+      } else {
+        priceHtml = `<span class="item-price">${currency}${item.price}</span>`;
+      }
     } else if (item.options && item.options.length > 0) {
       variantsHtml = `<div class="options-container">`;
       item.options.forEach(opt => {
@@ -184,6 +203,7 @@ function renderItems(items, currency, subcatTitleObj = null) {
     }
     
     card.innerHTML = `
+      ${comboBadgeHtml}
       ${subcatStr}
       <div class="item-header">
         <h4 class="item-name">${nameStr}</h4>
