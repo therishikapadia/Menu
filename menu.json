@@ -273,17 +273,47 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 40 },
-                { "name": { "en": "Full", "gu": "ફુલ" }, "price": 60 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 40
+                },
+                {
+                  "name": {
+                    "en": "Full",
+                    "gu": "ફુલ"
+                  },
+                  "price": 60
+                }
               ]
             },
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 45 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 60 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 45
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 60
+                }
               ]
             }
           ]
@@ -296,17 +326,47 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 40 },
-                { "name": { "en": "Full", "gu": "ફુલ" }, "price": 60 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 40
+                },
+                {
+                  "name": {
+                    "en": "Full",
+                    "gu": "ફુલ"
+                  },
+                  "price": 60
+                }
               ]
             },
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 50 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 70 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 50
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 70
+                }
               ]
             }
           ]
@@ -319,17 +379,47 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 60 },
-                { "name": { "en": "Full", "gu": "ફુલ" }, "price": 90 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 60
+                },
+                {
+                  "name": {
+                    "en": "Full",
+                    "gu": "ફુલ"
+                  },
+                  "price": 90
+                }
               ]
             },
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 70 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 90 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 70
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 90
+                }
               ]
             }
           ]
@@ -342,16 +432,40 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 40 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 40
+                }
               ]
             },
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 50 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 70 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 50
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 70
+                }
               ]
             }
           ]
@@ -364,16 +478,40 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 60 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 60
+                }
               ]
             },
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 70 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 100 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 70
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 100
+                }
               ]
             }
           ]
@@ -386,10 +524,25 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 40 },
-                { "name": { "en": "Full", "gu": "ફુલ" }, "price": 60 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 40
+                },
+                {
+                  "name": {
+                    "en": "Full",
+                    "gu": "ફુલ"
+                  },
+                  "price": 60
+                }
               ]
             }
           ]
@@ -402,10 +555,25 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 60 },
-                { "name": { "en": "Full", "gu": "ફુલ" }, "price": 90 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 60
+                },
+                {
+                  "name": {
+                    "en": "Full",
+                    "gu": "ફુલ"
+                  },
+                  "price": 90
+                }
               ]
             }
           ]
@@ -418,10 +586,25 @@
           },
           "options": [
             {
-              "type": { "en": "Plain", "gu": "પ્લેન" },
+              "type": {
+                "en": "Plain",
+                "gu": "પ્લેન"
+              },
               "variants": [
-                { "name": { "en": "Half", "gu": "હાફ" }, "price": 60 },
-                { "name": { "en": "Full", "gu": "ફુલ" }, "price": 90 }
+                {
+                  "name": {
+                    "en": "Half",
+                    "gu": "હાફ"
+                  },
+                  "price": 60
+                },
+                {
+                  "name": {
+                    "en": "Full",
+                    "gu": "ફુલ"
+                  },
+                  "price": 90
+                }
               ]
             }
           ]
@@ -434,10 +617,25 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 60 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 90 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 60
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 90
+                }
               ]
             }
           ]
@@ -450,10 +648,25 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 50 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 70 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 50
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 70
+                }
               ]
             }
           ]
@@ -466,10 +679,25 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "2 Layer", "gu": "૨ લેયર" }, "price": 70 },
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 100 }
+                {
+                  "name": {
+                    "en": "2 Layer",
+                    "gu": "૨ લેયર"
+                  },
+                  "price": 70
+                },
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 100
+                }
               ]
             }
           ]
@@ -482,9 +710,18 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 140 }
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 140
+                }
               ]
             }
           ]
@@ -497,9 +734,18 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 120 }
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 120
+                }
               ]
             }
           ]
@@ -512,9 +758,18 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 120 }
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 120
+                }
               ]
             }
           ]
@@ -527,9 +782,18 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 120 }
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 120
+                }
               ]
             }
           ]
@@ -542,9 +806,18 @@
           },
           "options": [
             {
-              "type": { "en": "Grilled", "gu": "ગ્રીલ" },
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
               "variants": [
-                { "name": { "en": "3 Layer", "gu": "૩ લેયર" }, "price": 120 }
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 120
+                }
               ]
             }
           ]
@@ -707,6 +980,153 @@
           },
           "originalPrice": 360,
           "price": 330
+        }
+      ]
+    },
+    {
+      "id": "momos",
+      "title": {
+        "en": "Momos",
+        "gu": "મોમોસ"
+      },
+      "items": [
+        {
+          "id": "veg-fry-momos",
+          "name": {
+            "en": "Veg. Fry Momos (10 pcs)",
+            "gu": "વેજ ફ્રાય મોમોસ (10 પીસ)"
+          },
+          "price": 90
+        },
+        {
+          "id": "cheese-fry-momos",
+          "name": {
+            "en": "Cheese Fry Momos (6 pcs)",
+            "gu": "ચીઝ ફ્રાય મોમોસ (6 પીસ)"
+          },
+          "price": 120
+        },
+        {
+          "id": "paneer-fry-momos",
+          "name": {
+            "en": "Paneer Fry Momos (6 pcs)",
+            "gu": "પનીર ફ્રાય મોમોસ (6 પીસ)"
+          },
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "maska-bun",
+      "title": {
+        "en": "Maska Bun",
+        "gu": "મસ્કા બન"
+      },
+      "items": [
+        {
+          "id": "classic-maska-bun",
+          "name": {
+            "en": "Classic Maska Bun",
+            "gu": "ક્લાસિક મસ્કા બન"
+          },
+          "price": 30
+        },
+        {
+          "id": "jam-maska-bun",
+          "name": {
+            "en": "Jam Maska Bun",
+            "gu": "જામ મસ્કા બન"
+          },
+          "price": 40
+        },
+        {
+          "id": "jam-cheese-maska",
+          "name": {
+            "en": "Jam Cheese Maska",
+            "gu": "જામ ચીઝ મસ્કા"
+          },
+          "price": 60
+        },
+        {
+          "id": "chocolate-maska",
+          "name": {
+            "en": "Chocolate Maska",
+            "gu": "ચોકલેટ મસ્કા"
+          },
+          "price": 50
+        },
+        {
+          "id": "chocolate-cheese-maska",
+          "name": {
+            "en": "Chocolate Cheese Maska",
+            "gu": "ચોકલેટ ચીઝ મસ્કા"
+          },
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "slice",
+      "title": {
+        "en": "Slice",
+        "gu": "સ્લાઈસ"
+      },
+      "items": [
+        {
+          "id": "veg-slice",
+          "name": {
+            "en": "Veg Slice",
+            "gu": "વેજ સ્લાઈસ"
+          },
+          "price": 15
+        },
+        {
+          "id": "cheese-slice",
+          "name": {
+            "en": "Cheese Slice",
+            "gu": "ચીઝ સ્લાઈસ"
+          },
+          "price": 30
+        },
+        {
+          "id": "jam-slice",
+          "name": {
+            "en": "Jam Slice",
+            "gu": "જામ સ્લાઈસ"
+          },
+          "price": 20
+        },
+        {
+          "id": "jam-cheese-slice",
+          "name": {
+            "en": "Jam Cheese Slice",
+            "gu": "જામ ચીઝ સ્લાઈસ"
+          },
+          "price": 30
+        },
+        {
+          "id": "cheese-roll-slice",
+          "name": {
+            "en": "Cheese Roll Slice",
+            "gu": "ચીઝ રોલ સ્લાઈસ"
+          },
+          "price": 20
+        },
+        {
+          "id": "chocolate-slice",
+          "name": {
+            "en": "Chocolate Slice",
+            "gu": "ચોકલેટ સ્લાઈસ"
+          },
+          "price": 30
+        },
+        {
+          "id": "chocolate-cheese-slice",
+          "name": {
+            "en": "Chocolate Cheese Slice",
+            "gu": "ચોકલેટ ચીઝ સ્લાઈસ"
+          },
+          "price": 50
         }
       ]
     }
