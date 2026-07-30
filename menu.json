@@ -819,6 +819,259 @@
                   "price": 120
                 }
               ]
+            },
+            {
+              "name": {
+                "en": "Cheese Chutney Sandwich",
+                "gu": "ચીઝ ચટણી સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "2 Layer",
+                  "price": 70
+                },
+                {
+                  "name": "3 Layer",
+                  "price": 90
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Bread Butter",
+                "gu": "બ્રેડ બટર"
+              },
+              "variants": [
+                {
+                  "name": "2 Layer",
+                  "price": 45
+                },
+                {
+                  "name": "3 Layer",
+                  "price": 60
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Cheese Sandwich",
+                "gu": "ચીઝ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "2 Layer",
+                  "price": 60
+                },
+                {
+                  "name": "3 Layer",
+                  "price": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "manek-chowk-special",
+          "title": {
+            "en": "Manek Chowk Special Sandwich",
+            "gu": "માણેક ચોક સ્પેશિયલ સેન્ડવિચ"
+          },
+          "price_labels": [
+            "3 Layer"
+          ],
+          "items": [
+            {
+              "name": {
+                "en": "Ghughra Sandwich",
+                "gu": "ઘુઘરા સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "3 Layer",
+                  "price": 120
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Pineapple Sandwich",
+                "gu": "પાઇનએપલ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "3 Layer",
+                  "price": 120
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Chocolate Cheese Sandwich",
+                "gu": "ચોકલેટ ચીઝ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "3 Layer",
+                  "price": 120
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "plain",
+          "title": {
+            "en": "Plain Sandwich",
+            "gu": "પ્લેન સેન્ડવિચ"
+          },
+          "price_labels": [
+            "Half",
+            "Full"
+          ],
+          "items": [
+            {
+              "name": {
+                "en": "Vegetable Sandwich",
+                "gu": "વેજીટેબલ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 40
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Vegetable Cheese Sandwich",
+                "gu": "વેજીટેબલ ચીઝ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 60
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Bread Butter",
+                "gu": "બ્રેડ બટર"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 40
+                },
+                {
+                  "name": "Full",
+                  "price": 60
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Jam Sandwich",
+                "gu": "જામ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 40
+                },
+                {
+                  "name": "Full",
+                  "price": 60
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Jam Cheese Sandwich",
+                "gu": "જામ ચીઝ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 60
+                },
+                {
+                  "name": "Full",
+                  "price": 90
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Chutney Sandwich",
+                "gu": "ચટણી સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 40
+                },
+                {
+                  "name": "Full",
+                  "price": 60
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Chutney Cheese Sandwich",
+                "gu": "ચટણી ચીઝ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 60
+                },
+                {
+                  "name": "Full",
+                  "price": 90
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Chocolate Sandwich",
+                "gu": "ચોકલેટ સેન્ડવિચ"
+              },
+              "variants": [
+                {
+                  "name": "Half",
+                  "price": 60
+                },
+                {
+                  "name": "Full",
+                  "price": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "peri-peri-paneer-sandwich",
+          "name": {
+            "en": "Peri Peri Paneer Sandwich",
+            "gu": "પેરી પેરી પનીર સેન્ડવિચ"
+          },
+          "options": [
+            {
+              "type": {
+                "en": "Grilled",
+                "gu": "ગ્રીલ"
+              },
+              "variants": [
+                {
+                  "name": {
+                    "en": "3 Layer",
+                    "gu": "૩ લેયર"
+                  },
+                  "price": 140
+                }
+              ]
             }
           ]
         }
@@ -920,39 +1173,6 @@
             "gu": "અમૂલ ચીઝ દાબેલી"
           },
           "price": 50
-        }
-      ]
-    },
-    {
-      "id": "vada-pav",
-      "title": {
-        "en": "Vada Pav",
-        "gu": "વડા પાઉં"
-      },
-      "items": [
-        {
-          "id": "vadapav",
-          "name": {
-            "en": "Vadapav",
-            "gu": "વડા પાઉં"
-          },
-          "price": 25
-        },
-        {
-          "id": "butter-vadapav",
-          "name": {
-            "en": "Butter Vadapav",
-            "gu": "બટર વડા પાઉં"
-          },
-          "price": 30
-        },
-        {
-          "id": "cheese-vadapav",
-          "name": {
-            "en": "Cheese Vadapav",
-            "gu": "ચીઝ વડા પાઉં"
-          },
-          "price": 45
         }
       ]
     },
@@ -1073,60 +1293,85 @@
       },
       "items": [
         {
-          "id": "veg-slice",
+          "id": "sing-slice",
           "name": {
-            "en": "Veg Slice",
-            "gu": "વેજ સ્લાઈસ"
-          },
-          "price": 15
-        },
-        {
-          "id": "cheese-slice",
-          "name": {
-            "en": "Cheese Slice",
-            "gu": "ચીઝ સ્લાઈસ"
-          },
-          "price": 30
-        },
-        {
-          "id": "jam-slice",
-          "name": {
-            "en": "Jam Slice",
-            "gu": "જામ સ્લાઈસ"
+            "en": "Sing Slice",
+            "gu": "સીંગ સ્લાઈસ"
           },
           "price": 20
         },
         {
-          "id": "jam-cheese-slice",
+          "id": "sing-cheese-slice",
           "name": {
-            "en": "Jam Cheese Slice",
-            "gu": "જામ ચીઝ સ્લાઈસ"
+            "en": "Sing Cheese Slice",
+            "gu": "સીંગ ચીઝ સ્લાઈસ"
           },
           "price": 30
         },
         {
-          "id": "cheese-roll-slice",
+          "id": "chutney-cheese-slice",
           "name": {
-            "en": "Cheese Roll Slice",
-            "gu": "ચીઝ રોલ સ્લાઈસ"
+            "en": "Chutney Cheese Slice",
+            "gu": "ચટણી ચીઝ સ્લાઈસ"
           },
-          "price": 20
-        },
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "puff",
+      "title": {
+        "en": "Puff",
+        "gu": "પફ"
+      },
+      "items": [
         {
-          "id": "chocolate-slice",
+          "id": "regular-puff",
           "name": {
-            "en": "Chocolate Slice",
-            "gu": "ચોકલેટ સ્લાઈસ"
+            "en": "Regular Puff",
+            "gu": "રેગ્યુલર પફ"
           },
           "price": 30
         },
         {
-          "id": "chocolate-cheese-slice",
+          "id": "cheese-puff",
           "name": {
-            "en": "Chocolate Cheese Slice",
-            "gu": "ચોકલેટ ચીઝ સ્લાઈસ"
+            "en": "Cheese Puff",
+            "gu": "ચીઝ પફ"
           },
           "price": 50
+        },
+        {
+          "id": "tandoori-puff",
+          "name": {
+            "en": "Tandoori Puff",
+            "gu": "તંદૂરી પફ"
+          },
+          "price": 40
+        },
+        {
+          "id": "tandoori-cheese-puff",
+          "name": {
+            "en": "Tandoori Cheese Puff",
+            "gu": "તંદૂરી ચીઝ પફ"
+          },
+          "price": 60
+        },
+        {
+          "id": "schezwan-puff",
+          "name": {
+            "en": "Schezwan Puff",
+            "gu": "સેઝવાન પફ"
+          },
+          "price": 40
+        },
+        {
+          "id": "schezwan-cheese-puff",
+          "name": {
+            "en": "Schezwan Cheese Puff",
+            "gu": "સેઝવાન ચીઝ પફ"
+          },
+          "price": 60
         }
       ]
     }
