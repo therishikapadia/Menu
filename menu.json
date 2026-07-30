@@ -1075,7 +1075,17 @@
             }
           ]
         }
-      ]
+      ],
+      "notes": {
+        "en": [
+          "₹10 extra for Amul Butter.",
+          "Jain Sandwich available."
+        ],
+        "gu": [
+          "અમૂલ બટર માટે ₹10 એક્સ્ટ્રા.",
+          "જૈન સેન્ડવિચ ઉપલબ્ધ છે."
+        ]
+      }
     },
     {
       "id": "fries",
