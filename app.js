@@ -89,7 +89,6 @@ function setFilter(id) {
   renderMenu();
 }
 
-// Render Menu
 function renderMenu() {
   menuGrid.innerHTML = "";
   const currency = menuData.restaurant.currency || "₹";
@@ -100,136 +99,223 @@ function renderMenu() {
       : menuData.categories.filter((c) => c.id === currentFilter);
 
   categoriesToRender.forEach((cat) => {
-    // Add Category Header & Notes
+    // Category Header
     const catHeaderWrap = document.createElement("div");
     catHeaderWrap.className = "category-header-wrap";
 
     let notesHtml = "";
     if (cat.notes) {
       const notesList = cat.notes[currentLang] || cat.notes.en || [];
-      if (notesList.length > 0) {
-        notesHtml = `<div class="category-notes">${notesList.map((n) => `<span class="note-badge">📌 ${n}</span>`).join("")}</div>`;
+      if (notesList.length) {
+        notesHtml = `
+            <div class="category-notes">
+              ${notesList
+                .map((n) => `<span class="note-badge">📌 ${n}</span>`)
+                .join("")}
+            </div>
+          `;
       }
     }
 
     catHeaderWrap.innerHTML = `
-      <h3 class="category-header">${cat.title[currentLang] || cat.title.en}</h3>
-      ${notesHtml}
-    `;
+        <h3 class="category-header">
+          ${cat.title[currentLang] || cat.title.en}
+        </h3>
+        ${notesHtml}
+      `;
+
     menuGrid.appendChild(catHeaderWrap);
 
-    // Check if category has direct items
-    if (cat.items && cat.items.length > 0) {
+    // Render normal items
+    if (cat.items && cat.items.length) {
       renderItems(cat.items, currency);
     }
 
-    // Check if category has subcategories
-    if (cat.subcategories && cat.subcategories.length > 0) {
+    // Render sections (like Sandwich sections)
+    if (cat.sections && cat.sections.length) {
+      cat.sections.forEach((section) => {
+        const sectionHeader = document.createElement("div");
+        sectionHeader.className = "subcategory-header-wrap";
+        sectionHeader.innerHTML = `
+            <h4 class="subcategory-header">
+              ${section.title[currentLang] || section.title.en}
+            </h4>
+          `;
+        menuGrid.appendChild(sectionHeader);
+
+        renderItems(section.items, currency, section.priceLabels);
+      });
+    }
+
+    // Render subcategories (if any)
+    if (cat.subcategories && cat.subcategories.length) {
       cat.subcategories.forEach((subcat) => {
-        if (subcat.items && subcat.items.length > 0) {
-          renderItems(subcat.items, currency, subcat.title);
-        }
+        const sectionHeader = document.createElement("div");
+        sectionHeader.className = "subcategory-header-wrap";
+        sectionHeader.innerHTML = `
+            <h4 class="subcategory-header">
+              ${subcat.title[currentLang] || subcat.title.en}
+            </h4>
+          `;
+        menuGrid.appendChild(sectionHeader);
+
+        renderItems(subcat.items, currency);
       });
     }
   });
 }
 
-function renderItems(items, currency, subcatTitleObj = null) {
+function renderItems(items, currency, priceLabels = null) {
   items.forEach((item) => {
-    // Skip section/group objects (prevents empty cards)
     if (!item.name) return;
 
     const card = document.createElement("div");
     const isCombo = Boolean(item.originalPrice);
+    const hasPricesObject = Boolean(item.prices);
     card.className = `menu-card ${isCombo ? "combo-card" : ""}`;
 
     const nameStr = item.name[currentLang] || item.name.en;
 
-    let subcatStr = "";
-    if (subcatTitleObj) {
-      const st = subcatTitleObj[currentLang] || subcatTitleObj.en;
-      subcatStr = `<div class="subcat-title">${st}</div>`;
-    }
-
     let comboBadgeHtml = "";
-    if (isCombo) {
-      const tagText = currentLang === "en" ? "🔥 Combo Offer" : "🔥 કોમ્બો ઓફર";
 
-      comboBadgeHtml = `<div class="combo-badge">${tagText}</div>`;
+    if (isCombo) {
+      comboBadgeHtml = `
+        <div class="combo-badge">
+          ${currentLang === "en" ? "🔥 Combo Offer" : "🔥 કોમ્બો ઓફર"}
+        </div>
+      `;
     }
 
     let priceHtml = "";
     let variantsHtml = "";
 
-    if (item.price) {
+    // Handle items with prices object (like 2 Layer / 3 Layer)
+    if (hasPricesObject) {
+      const prices = item.prices;
+      const labels = priceLabels || Object.keys(prices);
+
+      // Check if any price exists
+      const hasAnyPrice = Object.values(prices).some(
+        (price) => price !== null && price !== undefined,
+      );
+
+      // If only one price exists, show it as single price
+      const availablePrices = Object.entries(prices).filter(
+        ([key, value]) => value !== null && value !== undefined,
+      );
+
+      if (availablePrices.length === 1) {
+        // Single price - show without layer label
+        const [key, price] = availablePrices[0];
+        priceHtml = `<span class="item-price">${currency}${price}</span>`;
+      } else if (availablePrices.length > 1) {
+        // Multiple prices - show with layer labels
+        priceHtml = '<div class="prices-container">';
+
+        labels.forEach((label) => {
+          const price = prices[label];
+          const displayLabel =
+            currentLang === "gu"
+              ? label === "2Layer"
+                ? "૨ લેયર"
+                : label === "3Layer"
+                  ? "૩ લેયર"
+                  : label
+              : label === "2Layer"
+                ? "2 Layer"
+                : label === "3Layer"
+                  ? "3 Layer"
+                  : label;
+
+          if (price !== null && price !== undefined) {
+            priceHtml += `
+              <div class="variant-item">
+                <span class="variant-name">${displayLabel}</span>
+                <span class="variant-price">${currency}${price}</span>
+              </div>
+            `;
+          }
+          // Don't show N/A items at all - hide them completely
+        });
+
+        priceHtml += "</div>";
+      } else {
+        // No prices available
+        priceHtml = `<span class="item-price">${currentLang === "en" ? "Price unavailable" : "ભાવ ઉપલબ્ધ નથી"}</span>`;
+      }
+    }
+    // Single price
+    else if (item.price !== undefined) {
       if (item.originalPrice) {
         const savings = item.originalPrice - item.price;
-        const saveText =
-          currentLang === "en"
-            ? `Save ${currency}${savings}`
-            : `${currency}${savings} બચત`;
 
         priceHtml = `
           <div class="price-container">
             <span class="original-price">${currency}${item.originalPrice}</span>
             <span class="item-price">${currency}${item.price}</span>
-            ${savings > 0 ? `<span class="save-badge">${saveText}</span>` : ""}
+            <span class="save-badge">
+              ${
+                currentLang === "en"
+                  ? `Save ${currency}${savings}`
+                  : `${currency}${savings} બચત`
+              }
+            </span>
           </div>
         `;
       } else {
         priceHtml = `<span class="item-price">${currency}${item.price}</span>`;
       }
-    } else if (item.options && item.options.length > 0) {
-      variantsHtml = `<div class="options-container">`;
+    }
+
+    // Options
+    if (item.options && item.options.length) {
+      variantsHtml += `<div class="options-container">`;
 
       item.options.forEach((opt) => {
-        // Support both "type" and old "name"
-        const heading = opt.type || opt.name || { en: "", gu: "" };
-
-        const typeStr =
+        const heading = opt.type || opt.name || {};
+        const title =
           typeof heading === "object"
             ? heading[currentLang] || heading.en
             : heading;
 
         variantsHtml += `
           <div class="option-group">
-            ${typeStr ? `<div class="option-group-title">${typeStr}</div>` : ""}
-            <div class="option-variants">
+            ${title ? `<div class="option-group-title">${title}</div>` : ""}
         `;
 
         opt.variants.forEach((v) => {
-          const vName =
+          const variantName =
             typeof v.name === "object"
               ? v.name[currentLang] || v.name.en
               : v.name;
 
           variantsHtml += `
             <div class="variant-item">
-              <span class="variant-name">${vName}</span>
+              <span class="variant-name">${variantName}</span>
               <span class="variant-price">${currency}${v.price}</span>
             </div>
           `;
         });
 
-        variantsHtml += `
-            </div>
-          </div>
-        `;
+        variantsHtml += `</div>`;
       });
 
       variantsHtml += `</div>`;
-    } else if (item.variants && item.variants.length > 0) {
-      variantsHtml = `<div class="variants-container">`;
+    }
+
+    // Variants
+    else if (item.variants && item.variants.length) {
+      variantsHtml += `<div class="variants-container">`;
 
       item.variants.forEach((v) => {
-        const vName =
+        const variantName =
           typeof v.name === "object"
             ? v.name[currentLang] || v.name.en
             : v.name;
 
         variantsHtml += `
           <div class="variant-item">
-            <span class="variant-name">${vName}</span>
+            <span class="variant-name">${variantName}</span>
             <span class="variant-price">${currency}${v.price}</span>
           </div>
         `;
@@ -238,19 +324,33 @@ function renderItems(items, currency, subcatTitleObj = null) {
       variantsHtml += `</div>`;
     }
 
+    // Includes (Combo)
+    if (item.includes) {
+      const list = item.includes[currentLang] || item.includes.en;
+
+      variantsHtml += `
+        <div class="combo-includes">
+          <strong>${currentLang === "en" ? "Includes:" : "સમાવેશ:"}</strong>
+          <ul>
+            ${list.map((x) => `<li>${x}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+
     card.innerHTML = `
       ${comboBadgeHtml}
-      ${subcatStr}
+
       <div class="item-header">
         <h4 class="item-name">${nameStr}</h4>
         ${priceHtml}
       </div>
+
       ${variantsHtml}
     `;
 
     menuGrid.appendChild(card);
   });
 }
-
 // Start
 document.addEventListener("DOMContentLoaded", initApp);
