@@ -254,667 +254,167 @@
         "en": "Sandwich",
         "gu": "સેન્ડવિચ"
       },
-      "notes": {
-        "en": [
-          "₹10 extra for Amul Butter.",
-          "Jain Sandwich available."
-        ],
-        "gu": [
-          "અમૂલ બટર માટે ₹10 એક્સ્ટ્રા.",
-          "જૈન સેન્ડવિચ ઉપલબ્ધ છે."
-        ]
-      },
-      "items": [
+      "sections": [
         {
-          "id": "bread-butter",
-          "name": {
-            "en": "Bread Butter",
-            "gu": "બ્રેડ બટર"
+          "id": "grilled",
+          "title": {
+            "en": "Grilled Sandwich",
+            "gu": "ગ્રિલ્ડ સેન્ડવિચ"
           },
-          "options": [
+          "priceLabels": [
+            "2Layer",
+            "3Layer"
+          ],
+          "items": [
             {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
+              "name": {
+                "en": "Mexican Special Tandoori Paneer",
+                "gu": "મેક્સિકન સ્પેશિયલ તંદૂરી પનીર"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 40
-                },
-                {
-                  "name": {
-                    "en": "Full",
-                    "gu": "ફુલ"
-                  },
-                  "price": 60
-                }
-              ]
+              "prices": {
+                "2Layer": null,
+                "3Layer": 150
+              }
             },
             {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
+              "name": {
+                "en": "Peri Peri Paneer Sandwich",
+                "gu": "પેરી પેરી પનીર સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 45
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 60
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "chutney-sandwich",
-          "name": {
-            "en": "Chutney Sandwich",
-            "gu": "ચટણી સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 40
-                },
-                {
-                  "name": {
-                    "en": "Full",
-                    "gu": "ફુલ"
-                  },
-                  "price": 60
-                }
-              ]
+              "prices": {
+                "2Layer": null,
+                "3Layer": 150
+              }
             },
             {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
+              "name": {
+                "en": "Veg Cheese Grilled",
+                "gu": "વેજ ચીઝ ગ્રિલ્ડ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 50
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 70
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "chutney-cheese-sandwich",
-          "name": {
-            "en": "Chutney Cheese Sandwich",
-            "gu": "ચટણી ચીઝ સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 60
-                },
-                {
-                  "name": {
-                    "en": "Full",
-                    "gu": "ફુલ"
-                  },
-                  "price": 90
-                }
-              ]
+              "prices": {
+                "2Layer": null,
+                "3Layer": 120
+              }
             },
             {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
+              "name": {
+                "en": "Club Cheese Sandwich",
+                "gu": "ક્લબ ચીઝ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 70
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "vegetable-sandwich",
-          "name": {
-            "en": "Vegetable Sandwich",
-            "gu": "વેજીટેબલ સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 40
-                }
-              ]
+              "prices": {
+                "2Layer": null,
+                "3Layer": 120
+              }
             },
             {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
+              "name": {
+                "en": "Aloo Matar Grilled",
+                "gu": "આલુ મટર ગ્રિલ્ડ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 50
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 70
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "vegetable-cheese-sandwich",
-          "name": {
-            "en": "Vegetable Cheese Sandwich",
-            "gu": "વેજીટેબલ ચીઝ સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 60
-                }
-              ]
+              "prices": {
+                "2Layer": 50,
+                "3Layer": 70
+              }
             },
             {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
+              "name": {
+                "en": "Aloo Matar Cheese Grilled",
+                "gu": "આલુ મટર ચીઝ ગ્રિલ્ડ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 70
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "jam-sandwich",
-          "name": {
-            "en": "Jam Sandwich",
-            "gu": "જામ સેન્ડવિચ"
-          },
-          "options": [
+              "prices": {
+                "2Layer": 70,
+                "3Layer": 100
+              }
+            },
             {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
+              "name": {
+                "en": "Vegetable Grilled",
+                "gu": "વેજીટેબલ ગ્રિલ્ડ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 40
-                },
-                {
-                  "name": {
-                    "en": "Full",
-                    "gu": "ફુલ"
-                  },
-                  "price": 60
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "jam-cheese-sandwich",
-          "name": {
-            "en": "Jam Cheese Sandwich",
-            "gu": "જામ ચીઝ સેન્ડવિચ"
-          },
-          "options": [
+              "prices": {
+                "2Layer": 50,
+                "3Layer": 70
+              }
+            },
             {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
+              "name": {
+                "en": "Vegetable Cheese Grilled",
+                "gu": "વેજીટેબલ ચીઝ ગ્રિલ્ડ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 60
-                },
-                {
-                  "name": {
-                    "en": "Full",
-                    "gu": "ફુલ"
-                  },
-                  "price": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "chocolate-sandwich",
-          "name": {
-            "en": "Chocolate Sandwich",
-            "gu": "ચોકલેટ સેન્ડવિચ"
-          },
-          "options": [
+              "prices": {
+                "2Layer": 70,
+                "3Layer": 100
+              }
+            },
             {
-              "type": {
-                "en": "Plain",
-                "gu": "પ્લેન"
+              "name": {
+                "en": "Chutney Sandwich",
+                "gu": "ચટણી સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": {
-                    "en": "Half",
-                    "gu": "હાફ"
-                  },
-                  "price": 60
-                },
-                {
-                  "name": {
-                    "en": "Full",
-                    "gu": "ફુલ"
-                  },
-                  "price": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cheese-sandwich",
-          "name": {
-            "en": "Cheese Sandwich",
-            "gu": "ચીઝ સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 60
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "aloo-matar-sandwich",
-          "name": {
-            "en": "Aloo Matar Sandwich",
-            "gu": "આલુ મટર સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 50
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 70
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "aloo-matar-cheese-sandwich",
-          "name": {
-            "en": "Aloo Matar Cheese Sandwich",
-            "gu": "આલુ મટર ચીઝ સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "2 Layer",
-                    "gu": "૨ લેયર"
-                  },
-                  "price": 70
-                },
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mexican-special-tandoori-paneer",
-          "name": {
-            "en": "Mexican Special Tandoori Paneer",
-            "gu": "મેક્સિકન સ્પેશિયલ તંદૂરી પનીર"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "club-cheese-sandwich",
-          "name": {
-            "en": "Club Cheese Sandwich",
-            "gu": "ક્લબ ચીઝ સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 120
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "ghughra-sandwich",
-          "name": {
-            "en": "Ghughra Sandwich (Manek Chowk Special)",
-            "gu": "ઘુઘરા સેન્ડવિચ (માણેક ચોક સ્પેશિયલ)"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 120
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "pineapple-sandwich",
-          "name": {
-            "en": "Pineapple Sandwich (Manek Chowk Special)",
-            "gu": "પાઇનએપલ સેન્ડવિચ (માણેક ચોક સ્પેશિયલ)"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 120
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "chocolate-cheese-sandwich",
-          "name": {
-            "en": "Chocolate Cheese Sandwich (Manek Chowk Special)",
-            "gu": "ચોકલેટ ચીઝ સેન્ડવિચ (માણેક ચોક સ્પેશિયલ)"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 120
-                }
-              ]
+              "prices": {
+                "2Layer": 50,
+                "3Layer": 70
+              }
             },
             {
               "name": {
                 "en": "Cheese Chutney Sandwich",
                 "gu": "ચીઝ ચટણી સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "2 Layer",
-                  "price": 70
-                },
-                {
-                  "name": "3 Layer",
-                  "price": 90
-                }
-              ]
+              "prices": {
+                "2Layer": 70,
+                "3Layer": 90
+              }
             },
             {
               "name": {
                 "en": "Bread Butter",
                 "gu": "બ્રેડ બટર"
               },
-              "variants": [
-                {
-                  "name": "2 Layer",
-                  "price": 45
-                },
-                {
-                  "name": "3 Layer",
-                  "price": 60
-                }
-              ]
+              "prices": {
+                "2Layer": 45,
+                "3Layer": 60
+              }
             },
             {
               "name": {
                 "en": "Cheese Sandwich",
                 "gu": "ચીઝ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "2 Layer",
-                  "price": 60
-                },
-                {
-                  "name": "3 Layer",
-                  "price": 90
-                }
-              ]
+              "prices": {
+                "2Layer": 60,
+                "3Layer": 90
+              }
             }
           ]
         },
         {
           "id": "manek-chowk-special",
           "title": {
-            "en": "Manek Chowk Special Sandwich",
-            "gu": "માણેક ચોક સ્પેશિયલ સેન્ડવિચ"
+            "en": "Manek Chowk Special",
+            "gu": "માણેક ચોક સ્પેશિયલ"
           },
-          "price_labels": [
-            "3 Layer"
-          ],
           "items": [
             {
               "name": {
                 "en": "Ghughra Sandwich",
                 "gu": "ઘુઘરા સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "3 Layer",
-                  "price": 120
-                }
-              ]
+              "price": 120
             },
             {
               "name": {
                 "en": "Pineapple Sandwich",
                 "gu": "પાઇનએપલ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "3 Layer",
-                  "price": 120
-                }
-              ]
+              "price": 120
             },
             {
               "name": {
                 "en": "Chocolate Cheese Sandwich",
                 "gu": "ચોકલેટ ચીઝ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "3 Layer",
-                  "price": 120
-                }
-              ]
+              "price": 120
             }
           ]
         },
@@ -924,154 +424,62 @@
             "en": "Plain Sandwich",
             "gu": "પ્લેન સેન્ડવિચ"
           },
-          "price_labels": [
-            "Half",
-            "Full"
-          ],
           "items": [
             {
               "name": {
                 "en": "Vegetable Sandwich",
                 "gu": "વેજીટેબલ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 40
-                }
-              ]
+              "price": 40
             },
             {
               "name": {
                 "en": "Vegetable Cheese Sandwich",
                 "gu": "વેજીટેબલ ચીઝ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 60
-                }
-              ]
+              "price": 60
             },
             {
               "name": {
                 "en": "Bread Butter",
                 "gu": "બ્રેડ બટર"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 40
-                },
-                {
-                  "name": "Full",
-                  "price": 60
-                }
-              ]
+              "price": 40
             },
             {
               "name": {
                 "en": "Jam Sandwich",
                 "gu": "જામ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 40
-                },
-                {
-                  "name": "Full",
-                  "price": 60
-                }
-              ]
+              "price": 40
             },
             {
               "name": {
                 "en": "Jam Cheese Sandwich",
                 "gu": "જામ ચીઝ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 60
-                },
-                {
-                  "name": "Full",
-                  "price": 90
-                }
-              ]
+              "price": 60
             },
             {
               "name": {
                 "en": "Chutney Sandwich",
                 "gu": "ચટણી સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 40
-                },
-                {
-                  "name": "Full",
-                  "price": 60
-                }
-              ]
+              "price": 40
             },
             {
               "name": {
                 "en": "Chutney Cheese Sandwich",
                 "gu": "ચટણી ચીઝ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 60
-                },
-                {
-                  "name": "Full",
-                  "price": 90
-                }
-              ]
+              "price": 60
             },
             {
               "name": {
                 "en": "Chocolate Sandwich",
                 "gu": "ચોકલેટ સેન્ડવિચ"
               },
-              "variants": [
-                {
-                  "name": "Half",
-                  "price": 60
-                },
-                {
-                  "name": "Full",
-                  "price": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "peri-peri-paneer-sandwich",
-          "name": {
-            "en": "Peri Peri Paneer Sandwich",
-            "gu": "પેરી પેરી પનીર સેન્ડવિચ"
-          },
-          "options": [
-            {
-              "type": {
-                "en": "Grilled",
-                "gu": "ગ્રીલ"
-              },
-              "variants": [
-                {
-                  "name": {
-                    "en": "3 Layer",
-                    "gu": "૩ લેયર"
-                  },
-                  "price": 140
-                }
-              ]
+              "price": 60
             }
           ]
         }
@@ -1184,22 +592,67 @@
       },
       "items": [
         {
-          "id": "pizza-sandwich-fries-combo",
+          "id": "pizza-combo",
           "name": {
-            "en": "Pizza (150) + Sandwich (120) + French Fries (80)",
-            "gu": "પિઝ્ઝા (૧૫૦) + સેન્ડવીચ (૧૨૦) + ફ્રેન્ચ ફ્રાઈસ (૮૦)"
+            "en": "Pizza Combo",
+            "gu": "પિઝ્ઝા કોમ્બો"
           },
-          "originalPrice": 350,
-          "price": 320
+          "includes": {
+            "en": [
+              "1 Medium Pizza",
+              "Garlic Bread",
+              "Cold Coffee"
+            ],
+            "gu": [
+              "૧ મીડિયમ પિઝ્ઝા",
+              "ગાર્લિક બ્રેડ",
+              "કોલ્ડ કોફી"
+            ]
+          },
+          "originalPrice": 410,
+          "price": 370
         },
         {
-          "id": "burger-garlicbread-pizza-coffee-combo",
+          "id": "burger-combo",
           "name": {
-            "en": "Burger (70) + Garlic Bread (80) + Pizza (150) + Cold Coffee (60)",
-            "gu": "બર્ગર (૭૦) + ગાર્લિક બ્રેડ (૮૦) + પિઝ્ઝા (૧૫૦) + કોલ્ડ કોફી (૬૦)"
+            "en": "Burger Combo",
+            "gu": "બર્ગર કોમ્બો"
           },
-          "originalPrice": 360,
-          "price": 330
+          "includes": {
+            "en": [
+              "1 Burger",
+              "French Fries",
+              "Cold Coffee"
+            ],
+            "gu": [
+              "૧ બર્ગર",
+              "ફ્રેન્ચ ફ્રાઈઝ",
+              "કોલ્ડ કોફી"
+            ]
+          },
+          "originalPrice": 210,
+          "price": 190
+        },
+        {
+          "id": "sandwich-combo",
+          "name": {
+            "en": "Sandwich Combo",
+            "gu": "સેન્ડવિચ કોમ્બો"
+          },
+          "includes": {
+            "en": [
+              "1 Grilled Sandwich",
+              "French Fries",
+              "Cold Coffee"
+            ],
+            "gu": [
+              "૧ ગ્રિલ્ડ સેન્ડવિચ",
+              "ફ્રેન્ચ ફ્રાઈઝ",
+              "કોલ્ડ કોફી"
+            ]
+          },
+          "originalPrice": 290,
+          "price": 260
         }
       ]
     },
@@ -1293,26 +746,82 @@
       },
       "items": [
         {
-          "id": "sing-slice",
+          "id": "veg-slice",
           "name": {
-            "en": "Sing Slice",
-            "gu": "સીંગ સ્લાઈસ"
+            "en": "Veg Slice",
+            "gu": "વેજ સ્લાઇસ"
           },
-          "price": 20
+          "price": 15
         },
         {
-          "id": "sing-cheese-slice",
+          "id": "cheese-slice",
           "name": {
-            "en": "Sing Cheese Slice",
-            "gu": "સીંગ ચીઝ સ્લાઈસ"
+            "en": "Cheese Slice",
+            "gu": "ચીઝ સ્લાઇસ"
           },
           "price": 30
         },
         {
-          "id": "chutney-cheese-slice",
+          "id": "jam-slice",
           "name": {
-            "en": "Chutney Cheese Slice",
-            "gu": "ચટણી ચીઝ સ્લાઈસ"
+            "en": "Jam Slice",
+            "gu": "જામ સ્લાઇસ"
+          },
+          "price": 20
+        },
+        {
+          "id": "jam-cheese-slice",
+          "name": {
+            "en": "Jam Cheese Slice",
+            "gu": "જામ ચીઝ સ્લાઇસ"
+          },
+          "price": 30
+        },
+        {
+          "id": "cheese-rose-slice",
+          "name": {
+            "en": "Cheese Rose Slice",
+            "gu": "ચીઝ રોઝ સ્લાઇસ"
+          },
+          "price": 20
+        },
+        {
+          "id": "chocolate-slice",
+          "name": {
+            "en": "Chocolate Slice",
+            "gu": "ચોકલેટ સ્લાઇસ"
+          },
+          "price": 30
+        },
+        {
+          "id": "chocolate-cheese-slice",
+          "name": {
+            "en": "Chocolate Cheese Slice",
+            "gu": "ચોકલેટ ચીઝ સ્લાઇસ"
+          },
+          "price": 50
+        },
+        {
+          "id": "sing-seem-slice",
+          "name": {
+            "en": "Sing Slice / Seem Slice",
+            "gu": "શિંગ સ્લાઇસ / સીમ સ્લાઇસ"
+          },
+          "price": 20
+        },
+        {
+          "id": "sing-seem-cheese-slice",
+          "name": {
+            "en": "Sing Cheese Slice / Seem Cheese Slice",
+            "gu": "શિંગ ચીઝ સ્લાઇસ / સીમ ચીઝ સ્લાઇસ"
+          },
+          "price": 30
+        },
+        {
+          "id": "chatni-cheese-slice",
+          "name": {
+            "en": "Chatni Cheese Slice",
+            "gu": "ચટણી ચીઝ સ્લાઇસ"
           },
           "price": 30
         }
