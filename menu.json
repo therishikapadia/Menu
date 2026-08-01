@@ -483,7 +483,17 @@
             }
           ]
         }
-      ]
+      ],
+      "notes": {
+        "en": [
+          "₹10 extra for Amul Butter.",
+          "Jain Sandwich available."
+        ],
+        "gu": [
+          "અમૂલ બટર માટે ₹10 એક્સ્ટ્રા.",
+          "જૈન સેન્ડવિચ ઉપલબ્ધ છે."
+        ]
+      }
     },
     {
       "id": "fries",
@@ -600,11 +610,15 @@
           "includes": {
             "en": [
               "1 Medium Pizza",
+              "1 Sandwich",
+              "1 Burger",
               "Garlic Bread",
               "Cold Coffee"
             ],
             "gu": [
               "૧ મીડિયમ પિઝ્ઝા",
+              "૧ સેન્ડવિચ",
+              "૧ બર્ગર",
               "ગાર્લિક બ્રેડ",
               "કોલ્ડ કોફી"
             ]
@@ -746,10 +760,10 @@
       },
       "items": [
         {
-          "id": "veg-slice",
+          "id": "butter-slice",
           "name": {
-            "en": "Veg Slice",
-            "gu": "વેજ સ્લાઇસ"
+            "en": "Butter Slice",
+            "gu": "બટર સ્લાઇસ"
           },
           "price": 15
         },
@@ -770,20 +784,52 @@
           "price": 20
         },
         {
-          "id": "jam-cheese-slice",
+          "id": "jam-cheese",
           "name": {
-            "en": "Jam Cheese Slice",
-            "gu": "જામ ચીઝ સ્લાઇસ"
+            "en": "Jam Cheese",
+            "gu": "જામ ચીઝ"
           },
           "price": 30
         },
         {
-          "id": "cheese-rose-slice",
+          "id": "jam-sing-sev",
           "name": {
-            "en": "Cheese Rose Slice",
-            "gu": "ચીઝ રોઝ સ્લાઇસ"
+            "en": "Jam Sing Sev",
+            "gu": "જામ શિંગ સેવ"
+          },
+          "price": 30
+        },
+        {
+          "id": "sing-slice",
+          "name": {
+            "en": "Sing Slice",
+            "gu": "શિંગ સ્લાઇસ"
           },
           "price": 20
+        },
+        {
+          "id": "sing-cheese",
+          "name": {
+            "en": "Sing Cheese",
+            "gu": "શિંગ ચીઝ"
+          },
+          "price": 30
+        },
+        {
+          "id": "chutney-slice",
+          "name": {
+            "en": "Chutney Slice",
+            "gu": "ચટણી સ્લાઇસ"
+          },
+          "price": 20
+        },
+        {
+          "id": "chutney-cheese",
+          "name": {
+            "en": "Chutney Cheese",
+            "gu": "ચટણી ચીઝ"
+          },
+          "price": 30
         },
         {
           "id": "chocolate-slice",
@@ -794,36 +840,12 @@
           "price": 30
         },
         {
-          "id": "chocolate-cheese-slice",
+          "id": "chocolate-cheese",
           "name": {
-            "en": "Chocolate Cheese Slice",
-            "gu": "ચોકલેટ ચીઝ સ્લાઇસ"
+            "en": "Chocolate Cheese",
+            "gu": "ચોકલેટ ચીઝ"
           },
           "price": 50
-        },
-        {
-          "id": "sing-seem-slice",
-          "name": {
-            "en": "Sing Slice / Seem Slice",
-            "gu": "શિંગ સ્લાઇસ / સીમ સ્લાઇસ"
-          },
-          "price": 20
-        },
-        {
-          "id": "sing-seem-cheese-slice",
-          "name": {
-            "en": "Sing Cheese Slice / Seem Cheese Slice",
-            "gu": "શિંગ ચીઝ સ્લાઇસ / સીમ ચીઝ સ્લાઇસ"
-          },
-          "price": 30
-        },
-        {
-          "id": "chatni-cheese-slice",
-          "name": {
-            "en": "Chatni Cheese Slice",
-            "gu": "ચટણી ચીઝ સ્લાઇસ"
-          },
-          "price": 30
         }
       ]
     },
